@@ -11,8 +11,8 @@ ${Browser}  firefox
 Login Action
     Open Browser  ${Milestone URL}  ${Browser}
     Wait Until Page Contains Element    ${txt_loginUserName}
-    Input Text  ${txt_loginUserName}   reashmaj@amazon.com                        # Username
-    Input Text  ${txt_loginPassword}    Passtest@1                                # Password
+    Input Text  ${txt_loginUserName}   LOGIN@example.com                        # Username
+    Input Text  ${txt_loginPassword}    PASSWORD                                # Password
     Click Element   ${btn_login}                                                  # Login button
     Title Should Be 	Donut Puffin - Day 0 - TestRail
     execute javascript  window.scrollTo(0,document.body.scrollHeight)
